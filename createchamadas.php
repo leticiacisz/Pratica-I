@@ -5,7 +5,7 @@ include "db.php";
 if($_SERVER ['REQUEST_METHOD'] == 'POST'){
     $datadaabertura_chamados = $_POST ['datadaabertura_chamados'];
     $criticidade_chamados = $_POST['criticidade_chamados'];
-    $status_chamados = $_POST ['status+_chamados'];
+    $status_chamados = $_POST ['status_chamados'];
 
 
     $sql = "INSERT INTO chamados ( datadaabertura_chamado, criticidade_chamados, status_chamados) VALUE ( '$datadaabertura_chamados', '$criticidade_chamados', '$status_chamados')";
